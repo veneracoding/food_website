@@ -1176,7 +1176,7 @@ p {
     cursor: pointer;
 }
 
-.testimonials-box-top{
+.testimonial-box-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1187,8 +1187,8 @@ p {
     min-width: 100px;
     min-height: 100px;
     border-radius: 50%;
-    margin-bottom: -50px;
-    box-shadow: 10px 10px 6px #d4d4d4;
+    margin-top: -40px;
+    box-shadow: 10px 7px 8px #d4d4d4;
 }
 
 .testimonials-box-img-text .h3-title{
@@ -1197,7 +1197,52 @@ p {
 }
 
 .testimonials-box-text p{
-  font-size: 16px !important;
-  align-items: center;
-  color: #d6a029;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.star-rating-wp{
+    display: block;
+}
+
+.star-rating{
+    font-size: 22px;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.star-rating::after{
+    content: "\e84e\e84e\e84e\e84e\e84e";
+    font-family: "Font Awesome 5 Rro";
+    font-weight: 900;
+    color: #c8c8c8;
+    filter: drop-shadow(0 0.6rem 0.3rem rgb(0, 0, 0, 0.05));
+    letter-spacing: 4px;
+}
+
+.star-rating_fill::after{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: fill-star 2s ease-in-out;
+}
+
+.star-rating_fill::after{
+    content: "\e84e\e84e\e84e\e84e\e84e";
+    font-family: "Font Awesome 5 Rro";
+    font-weight: 900;
+    color: #ff8243;
+    letter-spacing: 4px;
+}
+
+@keyframes fill-star{
+    0%{
+        width:0;
+    }
 }
