@@ -1395,5 +1395,18 @@ p {
 
 
 
-/* ******************************** */
+/* ***************    footer  ***************** */
+
+.top-footer, .bottom-footer{
+    border-top: 1px solid rgb(204 204 204 / 40%);
+    position: relative;
+}
+
+.footer-logo{
+    margin-bottom: 30px;
+}
+
+.footer-info .social-icon{
+    margin-top: 20px;
+}
 
